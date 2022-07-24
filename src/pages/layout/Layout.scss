@@ -1,0 +1,18 @@
+#open-menu {
+  position: fixed;
+  bottom: 0;
+  border: none;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: none;
+  img{
+    width: 57px;
+    height: 57px;
+  }
+  #close{
+    transform: rotate3d(1,0,0, 180deg) translateY(-5px);
+  }
+}

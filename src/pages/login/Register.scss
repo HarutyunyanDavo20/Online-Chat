@@ -1,0 +1,63 @@
+#register-content {
+  width: 65vw;
+  height: 80vh;
+  border-radius: 25px;
+  box-shadow: 0 15px 25px 15px rgba(72, 68, 68, 0.557);
+  color: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (max-width: 850px) {
+    height: 60vh;
+  }
+  input {
+    width: 35%;
+    height: 33px;
+    margin: 15px 0;
+    color: rgb(0, 0, 0);
+    font-size: 27px;
+    background: rgba(255, 166, 0, 0.785);
+    border-radius: 15px;
+    border: 0;
+    text-align: center;
+    transition: 0.5s;
+    box-shadow: 0 0 5px 5px rgba(0, 225, 255, 0.311);
+    @media screen and (max-width: 850px) {
+      width: 80%;
+      font-size: 16px;
+    }
+  }
+  input::placeholder {
+    color: wheat;
+    font-size: 25px;
+    @media screen and (max-width: 850px) {
+      font-size: 16px;
+    }
+  }
+  input:focus {
+    width: 40%;
+    background: black;
+    color: white;
+    @media screen and (max-width: 850px) {
+      width: 90%;
+      background: black;
+      color: white;
+    }
+  }
+  #create {
+    margin-top: 20px;
+    width: 20%;
+    height: 45px;
+    background: gray;
+    border-radius: 30px;
+    font-size: 25px;
+    color: rgb(255, 200, 0);
+    background: rgb(0, 0, 0);
+    box-shadow: 0 0 5px 5px gray;
+    @media screen and (max-width: 850px) {
+      width: 60%;
+      font-size: 20px;
+    }
+  }
+}

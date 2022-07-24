@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+  transition: 0.5s;
+}
+
+#root {
+  height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a9, #00001a);
+}
+
+
+
+.content {
+  width: 90vw;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 10px;
+}

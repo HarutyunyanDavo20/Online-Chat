@@ -1,0 +1,63 @@
+#message-form {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  input {
+    width: 90%;
+    height: 100%;
+    border-radius: 15px;
+    outline: none;
+    border: 0;
+    font-size: 19px;
+    padding: 0 15px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  button {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    img {
+      width: 60px;
+      height: 60px;
+      transform: rotate(90deg);
+    }
+  }
+  @media screen and (max-width:800px) {
+    input{
+      width: 75%;
+    }
+    button{
+      width: 25%;
+    }
+  }
+  button:hover {
+    transform: translateX(-20px);
+  }
+}
+
+.sending {
+  animation: sendMessageAnnimation 10s alternate;
+}
+
+@keyframes sendMessageAnnimation {
+  0% {
+    transform: translateX(0) rotate(90deg);
+  }
+  3% {
+    transform: translateX(150px) rotate(90deg);
+  }
+  97%{
+    transform: translateX(150px) rotate(90deg);
+  }
+  98% {
+    transform: translateX(-20px) rotate(90deg);
+  }
+  100% {
+    transform: translateX(0) rotate(90deg);
+  }
+}
