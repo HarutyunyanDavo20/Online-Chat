@@ -32,7 +32,7 @@ const Register = ({ change }) => {
       autoComplete="off"
       onSubmit={handleSubmit(onRegister)}
     >
-      <input placeholder="name" {...register("name", { required: true })} />
+      <input placeholder="name" {...register("name", { required: true, maxLength: 15 })} />
       <input placeholder="email" {...register("email", { required: true })} />
       <input
         type="password"

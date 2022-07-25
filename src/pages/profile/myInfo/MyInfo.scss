@@ -1,0 +1,41 @@
+#my-info {
+  background: wheat;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 15px;
+  #name {
+    font-size: 29px;
+  }
+  #photo {
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 5px black;
+    width: 230px;
+    height: 230px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  #likes {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  #logout {
+    position: absolute;
+    bottom: 15px;
+  }
+}

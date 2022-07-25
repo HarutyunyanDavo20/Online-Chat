@@ -7,8 +7,8 @@ const HomePage = () => {
   return (
     <div id="home-page">
       <div className="content content-home">
-        <MessageForm />
         <GeneralChat />
+        <MessageForm />
       </div>
     </div>
   );
