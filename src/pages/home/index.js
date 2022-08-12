@@ -1,15 +1,13 @@
 import React from "react";
-import GeneralChat from "../../components/generalChat/GeneralChat";
+import GeneralChat from "../../components/generalChat";
 import MessageForm from "../../components/generalChat/MessageForm";
-import "./HomePage.scss";
+import "./style.scss";
 
 const HomePage = () => {
   return (
     <div id="home-page">
-      <div className="content content-home">
-        <GeneralChat />
-        <MessageForm />
-      </div>
+      <GeneralChat />
+      <MessageForm />
     </div>
   );
 };

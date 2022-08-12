@@ -1,11 +1,11 @@
 import React from 'react';
 import Menu from '../menu/Menu';
-import './Footer.scss'
+import './style.scss'
 
 const Footer = () => {
     return (
         <footer>
-            <Menu/>
+            <Menu />
         </footer>
     );
 };

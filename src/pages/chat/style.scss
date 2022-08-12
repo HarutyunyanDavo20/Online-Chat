@@ -1,0 +1,72 @@
+#chat {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+
+  #content-chat {
+    border-radius: 15px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+  }
+}
+
+.one-chat {
+  background: white;
+  border-radius: 7px;
+  position: relative;
+  padding: 10px 15px;
+  cursor: pointer;
+  #name {
+    font-weight: 800;
+  }
+  #message-content {
+    display: flex;
+    gap: 15px;
+
+    #last-msg {
+      font-weight: 300;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+  #one-chat-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  #delete {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    background: none;
+    border: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: red;
+  }
+}
+
+.one-chat::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0 5px 5px gray;
+  background: black;
+  width: 100%;
+}
+
+.activeChat {
+  flex: 12;
+}

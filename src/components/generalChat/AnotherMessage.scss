@@ -4,27 +4,74 @@
   display: flex;
   gap: 15px;
   justify-content: flex-start;
-  overflow: hidden;
   .this-message {
     background: rgba(255, 255, 255, 0.774);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     padding: 0 10px;
-    
+
     h6 {
       color: red;
     }
   }
   .img {
+    position: relative;
     width: 35px;
     height: 35px;
     border: 1px solid rgb(35, 35, 35);
     border-radius: 10px;
     align-self: flex-start;
+    cursor: pointer;
+    .profile-info-component {
+      display: flex;
+      flex-direction: column;
+      width: 150px;
+      box-shadow: 0 0 5px 5px gray;
+      border-radius: 7px;
+      background: none;
+      position: absolute;
+      left: 120%;
+      top: 0;
+      overflow: hidden;
+      
+      button{
+        font-size: 18px;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      .profile-info-component {
+        width: 80px;
+        background: white;
+        position: absolute;
+        box-shadow: 0 0 5px 5px gray;
+        border-radius: 5px;
+        left: 120%;
+        top: 0;
+        overflow: hidden;
+      }
+    }
     img {
       width: 35px;
       height: 35px;
     }
   }
+}
+
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.alert-exit {
+  opacity: 1;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
 }

@@ -2,10 +2,10 @@ import { collection, limit } from "firebase/firestore";
 import React, { useEffect, useRef } from "react";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import { db } from "../../firebaseConfig";
-import "./GeneralChat.scss";
 import OneMessage from "./OneMessage";
 import { query, orderBy } from "firebase/firestore";
 import Loader from "../loader/Loader";
+import "./style.scss";
 
 const GeneralChat = () => {
   const [messages, loading] = useCollectionData(
@@ -25,7 +25,7 @@ const GeneralChat = () => {
   return (
     <>
       <div id="general-chat">
-        <div className="messages" ref={scrollRef}>
+        <div className="messages vertical-scroll" ref={scrollRef}>
           {messages.reverse()?.map(message => (
             <OneMessage message={message} key={message.createAt} />
           ))}

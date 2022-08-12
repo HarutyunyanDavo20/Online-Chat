@@ -1,10 +1,10 @@
 import React from "react";
 import LinkMenu from "./LinkMenu";
-import "./Menu.scss";
 import home from "./img/home.png";
 import boy from "./img/boy-user.png";
 import messenger from "./img/messenger.png";
 import settings from "./img/settings.png";
+import "./style.scss";
 
 const Menu = () => {
   return (

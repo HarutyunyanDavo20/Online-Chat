@@ -1,0 +1,16 @@
+#log-out-btn {
+    width: 130px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: orange;
+    background: linear-gradient(135deg, #1a9, #00001a);
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0 0 5px 5px gray;
+  }
+  
+  #log-out-btn:hover {
+    transform: scale(1.1);
+  }
+  

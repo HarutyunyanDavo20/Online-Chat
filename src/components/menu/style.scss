@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+#menu {
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.active {
+  box-shadow: 0 0 15px 5px rgba(0, 255, 213, 0.696);
+  background: rgb(255, 255, 255);
+  border-radius: 20px;
+}

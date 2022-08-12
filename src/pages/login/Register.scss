@@ -8,14 +8,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 25px;
   @media screen and (max-width: 850px) {
     height: 60vh;
   }
   input {
     width: 35%;
     height: 33px;
-    margin: 15px 0;
-    color: rgb(0, 0, 0);
     font-size: 27px;
     background: rgba(255, 166, 0, 0.785);
     border-radius: 15px;
@@ -34,6 +33,40 @@
     @media screen and (max-width: 850px) {
       font-size: 16px;
     }
+  }
+  #gender-form {
+    background: rgba(255, 166, 0, 0.785);
+    box-shadow: 0 0 5px 5px rgba(0, 225, 255, 0.311);
+    display: flex;
+    align-items: center;
+    align-items: center;
+    width: 35%;
+    height: 45px;
+    border-radius: 15px;
+    position: relative;
+    @media screen and (max-width: 850px) {
+      width: 80%;
+      font-size: 16px;
+    }
+    label {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      input {
+        width: 20px;
+        height: 20px;
+        box-shadow: none;
+      }
+    }
+  }
+  #gender-form::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    height: 70%;
+    border: 1px solid rgb(87, 87, 87);
   }
   input:focus {
     width: 40%;
